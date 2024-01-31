@@ -1,0 +1,90 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.thumbnail {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.web-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 24px; 
+    margin-bottom: 10px;
+}
+
+.web-author {
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.web-views {
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.web-description {
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.video-time {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 18px;
+    right: 14px;
+}
